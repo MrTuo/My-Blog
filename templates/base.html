@@ -1,28 +1,49 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="{% static  "css/main.css" %}">
-        <link rel="stylesheet" href="{% static  "css/bootstrap.css" %}">
-        <title>{% block title %}{% endblock %}</title>
-    </head>
-    <body>
-        <div class="header" style="background-image: url({% static "img/header_bg.jpg" %})">
-            <div class="qianming">
-                <p>是的肤色付款即可发货</p>
-                <p>auhuhf</p>
-                <p>dfsdfsefsfesf</p>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="{% static  "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static  "css/main.css" %}">
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body style="background: url({% static "img/body_bg.jpg" %})">
+<div class="header" style="background-image: url({% static "img/header_bg.jpg" %})">
+    <div class="qianming">
+        <p>国税局和救人</p>
+        <p>auhuhf</p>
+        <p>dfsdfsefsfesf</p>
+    </div>
+</div>
+<div class="nav-box">
+    <div class="my-nav navbar navbar-inverse " role="navigation">
+        <ul class="nav navbar-nav">
+            <li><a href="##">首页</a></li>
+            <li><a href="##">文章列表</a></li>
+            <li><a href="##">留言板</a></li>
+            <li><a href="##">关于我</a></li>
+
+        </ul>
+        <form action="##" class="navbar-form navbar-right" rol="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="请输入关键词" />
             </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+        </form>
+    </div>
+</div>
+{% block content %}
+{% endblock %}
 
-        </div>
-        {% block content %}
-        {% endblock %}
+{% block aside %}
+{% endblock %}
 
-        {% block aside %}
-        {% endblock %}
-
-        {% block footer %}
-        {% endblock %}
-    </body>
+<footer>
+    <hr>
+        <p align="center" style="color:black"><strong>Copyright 2015 妥明翔<br />哈尔滨工业大学 计算机科学与技术学院<br />Powered by Django</strong></p>
+</footer>
+<script src="{% static "js/jquery-2.1.3.min.js" %}"></script>
+<script src="{% static "js/bootstrap.js" %}"></script>
+</body>
 </html>

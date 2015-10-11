@@ -7,5 +7,22 @@ body{
     background-size:100% 100%;
 }
 .qianming{
-    height: ;
+    height: 100%;
+    width:70%;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-box{
+    background-color: #222222;
+}
+.my-nav{
+    width: 70%;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article{
+    height: 1000px;
 }
