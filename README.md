@@ -1,3 +1,3 @@
 # My-Blog
-My private blog
+- A django toy project
 ..
